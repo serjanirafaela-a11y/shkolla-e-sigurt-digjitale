@@ -1,3 +1,8 @@
+/* =================================
+SHKOLLA E SIGURT DIGJITALE
+Dizajn modern dhe profesional
+================================= */
+/* RREGULLIMI FILLESTAR */
 * {
 margin: 0;
 padding: 0;
@@ -12,7 +17,9 @@ background-color: #f1f5f9;
 color: #263445;
 line-height: 1.7;
 }
-/* MENUJA KRYESORE */
+/* =================================
+MENUJA KRYESORE
+================================= */
 nav {
 background-color: #102f50;
 color: white;
@@ -20,10 +27,15 @@ padding: 20px 8%;
 display: flex;
 justify-content: space-between;
 align-items: center;
+position: sticky;
+top: 0;
+z-index: 1000;
+box-shadow: 0 3px 12px rgba(0,0,0,0.15);
 }
 nav h2 {
-color: #ffffff;
+color: white;
 font-size: 28px;
+letter-spacing: 2px;
 }
 nav div {
 display: flex;
@@ -38,52 +50,67 @@ transition: color 0.3s;
 nav a:hover {
 color: #69d2ff;
 }
-/* KRYEFAQJA */
+/* =================================
+KRYEFAQJA
+================================= */
 header {
-background: linear-gradient(135deg, #102f50, #1769aa);
+background: linear-gradient(
+135deg,
+#102f50,
+#1769aa,
+#2196c9
+);
 color: white;
 text-align: center;
 padding: 110px 20px;
 }
 header h1 {
-font-size: 42px;
+font-size: 44px;
 margin-bottom: 20px;
+letter-spacing: 1px;
 }
 header p {
-font-size: 19px;
+font-size: 20px;
 margin-bottom: 35px;
 }
-/* BUTONI */
+/* =================================
+BUTONI KRYESOR
+================================= */
 .button {
 display: inline-block;
-background-color: #ffffff;
+background-color: white;
 color: #123c69;
-padding: 14px 30px;
+padding: 14px 32px;
 border-radius: 30px;
 text-decoration: none;
 font-weight: bold;
-transition: 0.3s;
+transition: all 0.3s;
 }
 .button:hover {
 background-color: #69d2ff;
-transform: scale(1.05);
+color: #102f50;
+transform: translateY(-4px);
 }
-/* PJESA KRYESORE */
+/* =================================
+PJESA KRYESORE
+================================= */
 main {
-max-width: 1100px;
-margin: 50px auto;
+max-width: 1150px;
+margin: 55px auto;
 padding: 20px;
 }
 section {
-margin-bottom: 55px;
+margin-bottom: 65px;
 }
 section h2 {
 color: #123c69;
-font-size: 30px;
+font-size: 32px;
 text-align: center;
-margin-bottom: 30px;
+margin-bottom: 35px;
 }
-/* KARTAT E PROJEKTEVE */
+/* =================================
+KARTAT E PROJEKTEVE
+================================= */
 .cards {
 display: flex;
 gap: 25px;
@@ -91,43 +118,91 @@ gap: 25px;
 .card {
 flex: 1;
 background-color: white;
-padding: 35px 25px;
-border-radius: 15px;
-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
-transition: transform 0.3s, box-shadow 0.3s;
+padding: 18px;
+border-radius: 16px;
+box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+transition: transform 0.3s,
+box-shadow 0.3s;
 }
 .card:hover {
-transform: translateY(-8px);
-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+transform: translateY(-10px);
+box-shadow: 0 12px 28px rgba(0,0,0,0.15);
 }
+/* FOTOGRAFITË */
+.card img {
+width: 100%;
+height: 210px;
+object-fit: cover;
+border-radius: 12px;
+margin-bottom: 18px;
+}
+/* TITULLI I KARTËS */
 .card h3 {
 color: #1769aa;
-font-size: 21px;
-margin-bottom: 15px;
+font-size: 22px;
+margin-bottom: 12px;
 }
-/* RRETH PROJEKTIT */
+/* PËRSHKRIMI */
+.card p {
+color: #526273;
+font-size: 15px;
+}
+/* =================================
+RRETH PROJEKTIT
+================================= */
 #rreth {
 background-color: white;
-padding: 35px;
-border-radius: 15px;
+padding: 45px 30px;
+border-radius: 16px;
 text-align: center;
-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+box-shadow: 0 5px 20px rgba(0,0,0,0.05);
 }
-/* FUNDI I FAQES */
+#rreth p {
+max-width: 750px;
+margin: auto;
+font-size: 17px;
+}
+/* =================================
+FOOTER - FIRMA PROFESIONALE
+================================= */
 footer {
-background-color: #102f50;
+background: linear-gradient(
+135deg,
+#102f50,
+#1769aa
+);
 color: white;
 text-align: center;
-padding: 30px;
+padding: 40px 20px;
 }
-/* PER TELEFONAT */
+footer p:first-child {
+font-size: 17px;
+margin-bottom: 12px;
+}
+footer h3 {
+font-size: 25px;
+margin-bottom: 5px;
+}
+footer h4 {
+color: #69d2ff;
+font-size: 18px;
+letter-spacing: 1px;
+margin-bottom: 12px;
+}
+footer p:last-child {
+font-size: 13px;
+opacity: 0.8;
+}
+/* =================================
+PËRSHTATJA PËR TELEFON
+================================= */
 @media screen and (max-width: 700px) {
 nav {
 flex-direction: column;
 gap: 15px;
 }
 nav div {
-gap: 12px;
+gap: 15px;
 flex-wrap: wrap;
 justify-content: center;
 }
@@ -143,7 +218,13 @@ font-size: 16px;
 .cards {
 flex-direction: column;
 }
+.card img {
+height: 220px;
+}
 main {
 padding: 15px;
+}
+section h2 {
+font-size: 26px;
 }
 }
