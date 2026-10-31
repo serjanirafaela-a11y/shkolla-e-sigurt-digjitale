@@ -262,68 +262,67 @@ box-shadow: 0 12px 28px rgba(0,0,0,0.15);
 color: #1769aa;
 }
 /* =================================
-FORMULARI I KONTAKTIT
-================================= */
-
+/* FORMULAR MODERN - SHKOLLA E SIGURT DIGJITALE */
 #kontakt {
-background-color: white;
-padding: 50px 25px;
-border-radius: 18px;
-box-shadow: 0 5px 20px rgba(0,0,0,0.06);
-}
-
-.contact-intro {
-text-align: center;
-color: #526273;
-margin-bottom: 30px;
-}
-
-.contact-form {
-max-width: 650px;
-margin: 0 auto;
-display: flex;
-flex-direction: column;
-gap: 18px;
-}
-
-.contact-form input,
-.contact-form textarea {
-display: block;
+display: block !important;
 width: 100%;
-padding: 15px;
+max-width: 900px;
+margin: 60px auto;
+padding: 45px 25px;
+background: #ffffff;
+border-radius: 18px;
+box-sizing: border-box;
+text-align: center;
+}
+#kontakt .contact-intro {
+margin: 0 auto 30px;
+max-width: 650px;
+}
+#kontakt form.contact-form {
+display: flex !important;
+flex-direction: column !important;
+align-items: stretch !important;
+gap: 18px !important;
+width: 100% !important;
+max-width: 600px !important;
+margin: 0 auto !important;
+}
+#kontakt .contact-form input,
+#kontakt .contact-form textarea {
+display: block !important;
+float: none !important;
+position: static !important;
+width: 100% !important;
+max-width: 100% !important;
+min-width: 0 !important;
+height: auto;
+margin: 0 !important;
+padding: 16px !important;
+box-sizing: border-box !important;
 border: 1px solid #cbd5e1;
 border-radius: 10px;
+background: #f8fafc;
 font-family: Arial, sans-serif;
 font-size: 16px;
-box-sizing: border-box;
-background-color: #f8fafc;
 }
 
-.contact-form textarea {
-resize: vertical;
+#kontakt .contact-form textarea {
 min-height: 150px;
+resize: vertical;
 }
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-outline: none;
-border-color: #1769aa;
-background-color: white;
-}
-
-.contact-form button {
-width: 100%;
-padding: 15px;
+#kontakt .contact-form button {
+display: block !important;
+width: 100% !important;
+margin: 0 !important;
+padding: 16px;
 border: none;
 border-radius: 10px;
-background-color: #1769aa;
+background: #1769aa;
 color: white;
 font-size: 17px;
 font-weight: bold;
 cursor: pointer;
-transition: 0.3s;
 }
-
-.contact-form button:hover {
-background-color: #102f50;
+#kontakt .contact-form button:hover {
+background: #102f50;
 }
