@@ -3,43 +3,113 @@ margin: 0;
 padding: 0;
 box-sizing: border-box;
 }
+html {
+scroll-behavior: smooth;
+}
 body {
 font-family: Arial, sans-serif;
 background: #f0f4f8;
 color: #263445;
 line-height: 1.6;
 }
-header {
+/* MENU */
+nav {
 background: #123c69;
 color: white;
+padding: 20px 8%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+nav h2 {
+color: #ffffff;
+}
+nav a {
+color: white;
+text-decoration: none;
+margin-left: 20px;
+font-weight: bold;
+}
+/* KRYEFAQJA */
+header {
+background: linear-gradient(135deg, #123c69, #1769aa);
+color: white;
 text-align: center;
-padding: 45px 20px;
+padding: 100px 20px;
 }
 header h1 {
-font-size: 36px;
-margin-bottom: 10px;
+font-size: 42px;
+margin-bottom: 15px;
 }
+header p {
+font-size: 18px;
+margin-bottom: 30px;
+}
+/* BUTONI */
+.button {
+display: inline-block;
+background: white;
+color: #123c69;
+padding: 12px 25px;
+border-radius: 25px;
+text-decoration: none;
+font-weight: bold;
+}
+/* SEKSIONET */
 main {
-max-width: 900px;
-margin: 35px auto;
+max-width: 1100px;
+margin: 40px auto;
 padding: 20px;
 }
 section {
-background: white;
-padding: 25px;
-margin-bottom: 20px;
-border-radius: 12px;
+margin-bottom: 40px;
 }
-h2 {
+section h2 {
+text-align: center;
+color: #123c69;
+margin-bottom: 25px;
+font-size: 28px;
+}
+/* KARTAT */
+.cards {
+display: flex;
+gap: 20px;
+}
+.card {
+flex: 1;
+background: white;
+padding: 30px;
+border-radius: 15px;
+box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+transition: transform 0.3s;
+}
+.card:hover {
+transform: translateY(-8px);
+}
+.card h3 {
 color: #1769aa;
 margin-bottom: 15px;
 }
-ul {
-padding-left: 25px;
-}
+/* FOOTER */
 footer {
 background: #123c69;
 color: white;
 text-align: center;
-padding: 20px;
+padding: 25px;
+}
+/* TELEFONI */
+@media (max-width: 700px) {
+nav {
+flex-direction: column;
+gap: 15px;
+}
+nav a {
+margin: 0 7px;
+}
+header h1 {
+font-size: 30px;
+}
+.cards {
+flex-direction: column;
+}
 }
