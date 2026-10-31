@@ -326,3 +326,10 @@ cursor: pointer;
 #kontakt .contact-form button:hover {
 background: #102f50;
 }
+/* LOGOJA KRYESORE */
+nav .logo {
+width: 260px;
+height: auto;
+display: block;
+object-fit: contain;
+}
