@@ -261,3 +261,69 @@ box-shadow: 0 12px 28px rgba(0,0,0,0.15);
 #galeria .card h3 {
 color: #1769aa;
 }
+/* =================================
+FORMULARI I KONTAKTIT
+================================= */
+
+#kontakt {
+background-color: white;
+padding: 50px 25px;
+border-radius: 18px;
+box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+}
+
+.contact-intro {
+text-align: center;
+color: #526273;
+margin-bottom: 30px;
+}
+
+.contact-form {
+max-width: 650px;
+margin: 0 auto;
+display: flex;
+flex-direction: column;
+gap: 18px;
+}
+
+.contact-form input,
+.contact-form textarea {
+display: block;
+width: 100%;
+padding: 15px;
+border: 1px solid #cbd5e1;
+border-radius: 10px;
+font-family: Arial, sans-serif;
+font-size: 16px;
+box-sizing: border-box;
+background-color: #f8fafc;
+}
+
+.contact-form textarea {
+resize: vertical;
+min-height: 150px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+outline: none;
+border-color: #1769aa;
+background-color: white;
+}
+
+.contact-form button {
+width: 100%;
+padding: 15px;
+border: none;
+border-radius: 10px;
+background-color: #1769aa;
+color: white;
+font-size: 17px;
+font-weight: bold;
+cursor: pointer;
+transition: 0.3s;
+}
+
+.contact-form button:hover {
+background-color: #102f50;
+}
